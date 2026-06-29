@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
-    "@kinde-oss/kinde-auth-nextjs": "^2.12.2",
+    "@kinde-oss/kinde-auth-nextjs": "^2.13.0",
+    "@kinde/management-api-js": "^0.18.0",
     "@neondatabase/serverless": "^1.1.0",
     "@sentry/nextjs": "^10.60.0",
     "class-variance-authority": "^0.7.1",

@@ -8,12 +8,14 @@ type Props<T extends FieldValues> = {
   fieldTitle: string;
   nameInSchema: Path<T>;
   message: string;
+  disabled?: boolean;
 };
 
 export function CheckboxWithLabel<T extends FieldValues>({
   fieldTitle,
   nameInSchema,
   message,
+  disabled = false,
 }: Props<T>) {
   const {
     control,
@@ -38,6 +40,7 @@ export function CheckboxWithLabel<T extends FieldValues>({
               className="mt-2"
               checked={Boolean(field.value)}
               onCheckedChange={field.onChange}
+              disabled={disabled}
             />
           )}
         />

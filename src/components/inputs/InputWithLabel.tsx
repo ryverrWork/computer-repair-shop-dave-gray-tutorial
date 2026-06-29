@@ -32,7 +32,7 @@ export function InputWithLabel<T extends FieldValues>({
 
       <Input
         id={nameInSchema}
-        className={`w-full max-w-xs disabled:text-blue-500 dark:disabled:text-green-500 disabled:opacity-75 ${className ?? ""}`}
+        className={`w-full max-w-xs disabled:text-blue-500 dark:disabled:text-yellow-300 disabled:opacity-75 ${className ?? ""}`}
         {...register(nameInSchema)}
         {...props}
       />
